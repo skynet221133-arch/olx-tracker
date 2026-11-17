@@ -1,0 +1,61 @@
+name: OLX tracker
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"   # co 4 godziny (czas UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: olx-tracker
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Uruchom tracker
+        run: python olx_tracker.py
+        env:
+          SEARCH_URL: ${{ secrets.SEARCH_URL }}
+
+      - name: Zapisz historię w repozytorium
+        run: |
+          git config user.name "olx-tracker"
+          git config user.email "olx-tracker@users.noreply.github.com"
+          git add data
+          git diff --staged --quiet || (git commit -m "Aktualizacja danych" && git push)
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Opublikuj stronę
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Zachowaj stronę do diagnozy (tylko przy błędzie)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug
+          path: debug_last.html
+          if-no-files-found: ignore
