@@ -30,7 +30,7 @@
    "url": "https://www.olx.pl/d/oferta/mercedes-benz-cla-180-2018-1-6-benzyna-manual-110-000-km-CID5-ID1d8tep.html",
    "location": "Budzów",
    "first_seen": "2026-11-17T11:34:05+00:00",
-   "last_seen": "2026-11-24T17:12:37+00:00",
+   "last_seen": "2026-11-24T21:04:36+00:00",
    "created": "2026-11-06T11:26:13+01:00",
    "refreshed": "2026-11-20T11:30:46+01:00",
    "price": 52000.0,
@@ -52,9 +52,9 @@
    "url": "https://www.olx.pl/d/oferta/mercedes-benz-cla-mercedes-benz-cla-180amg-CID5-ID1bF7rM.html",
    "location": "Andrychów",
    "first_seen": "2026-11-17T11:34:05+00:00",
-   "last_seen": "2026-11-24T17:12:37+00:00",
+   "last_seen": "2026-11-24T21:04:36+00:00",
    "created": "2026-07-30T23:05:37+02:00",
-   "refreshed": "2026-11-14T19:59:00+01:00",
+   "refreshed": "2026-11-24T19:59:00+01:00",
    "price": 74000.0,
    "price_history": [
     [
@@ -65,7 +65,7 @@
    "drops": 0,
    "price_changes": 0,
    "title_changes": 0,
-   "refresh_count": 0,
+   "refresh_count": 1,
    "active": true
   },
   "1099688028": {
@@ -74,7 +74,7 @@
    "url": "https://www.olx.pl/d/oferta/mercedes-benz-cla-amg-line-salon-polska-zadbany-CID5-ID1cqb5G.html",
    "location": "Kraków",
    "first_seen": "2026-11-17T11:34:05+00:00",
-   "last_seen": "2026-11-24T17:12:37+00:00",
+   "last_seen": "2026-11-24T21:04:36+00:00",
    "created": "2026-09-21T12:04:03+02:00",
    "refreshed": "2026-11-16T11:33:19+01:00",
    "price": 79800.0,
@@ -96,7 +96,7 @@
    "url": "https://www.olx.pl/d/oferta/mercedes-cla-amg-line-CID5-ID1d3UjP.html",
    "location": "Witeradów",
    "first_seen": "2026-11-17T11:34:05+00:00",
-   "last_seen": "2026-11-24T17:12:37+00:00",
+   "last_seen": "2026-11-24T21:04:36+00:00",
    "created": "2026-11-01T13:55:00+01:00",
    "refreshed": "2026-11-01T14:01:55+01:00",
    "price": 65000.0,
@@ -118,7 +118,7 @@
    "url": "https://www.olx.pl/d/oferta/mercedes-benz-cla-mercedes-cla200-panorama-elektryczna-klapa-bdb-stan-CID5-ID1dl44X.html",
    "location": "Radzionków",
    "first_seen": "2026-11-18T21:02:31+00:00",
-   "last_seen": "2026-11-24T17:12:37+00:00",
+   "last_seen": "2026-11-24T21:04:36+00:00",
    "created": "2026-11-18T20:42:49+01:00",
    "refreshed": "2026-11-18T20:42:49+01:00",
    "price": 51900.0,
@@ -140,7 +140,7 @@
    "url": "https://www.olx.pl/d/oferta/mercedes-cla-180-1-6benzyna-panorama-dach-pakiet-nigt-CID5-ID1dnEOu.html",
    "location": "Myszków",
    "first_seen": "2026-11-21T16:55:35+00:00",
-   "last_seen": "2026-11-24T17:12:37+00:00",
+   "last_seen": "2026-11-24T21:04:36+00:00",
    "created": "2026-11-21T14:43:57+01:00",
    "refreshed": "2026-11-23T14:46:46+01:00",
    "price": 57900.0,
@@ -157,5 +157,5 @@
    "active": true
   }
  },
- "last_check": "2026-11-24T17:12:37+00:00"
+ "last_check": "2026-11-24T21:04:36+00:00"
 }
